@@ -56,15 +56,16 @@
 `POST /login/`
 
  https://ihor24.pythonanywhere.com/api/login/
-	### Response
-	
-	   	"Неправильный логин или пароль", 401
-		или
-		"message": "Успешный вход", 200
 
-		#### Login data
-			{
-		        name: 'Ihor',
-		        pass: 'password',
-		        rememberMe: true
-		   	 }
+### Response
+	
+"Неправильный логин или пароль", 401
+или
+"message": "Успешный вход", 200
+
+#### Login data
+	{
+	name: 'Ihor',
+	pass: 'password',
+	rememberMe: true
+	 }
