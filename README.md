@@ -45,6 +45,20 @@
 	  }
 	}
 ### Request
+`logined only`
+`GET /users/getme`
+
+    https://ihor24.pythonanywhere.com/api/users/getme
+
+### Response
+
+	{
+        'Login': user login,
+        'Name': display name,
+        'Phone_numbers': list of phone numbers,
+        'Contact_fields': возвращает пользовательские поля. ПОКА ЧТО ИГНОРИРУЕМ
+        }
+### Request
 
 `GET /test`
 
