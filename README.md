@@ -44,7 +44,7 @@
 		"FieldType": "button"
 	  }
 	}
-### getme
+### getme *возвращает информацию про текущего пользователя*
 `logined only`
 `GET /users/getme`
 
