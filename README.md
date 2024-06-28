@@ -18,7 +18,7 @@
 
 ## Get
 
-### Request
+### loginform
 
 `GET /loginform`
 
@@ -44,7 +44,7 @@
 		"FieldType": "button"
 	  }
 	}
-### Request
+### getme
 `logined only`
 `GET /users/getme`
 
@@ -58,7 +58,7 @@
         'Phone_numbers': list of phone numbers,
         'Contact_fields': возвращает пользовательские поля. ПОКА ЧТО ИГНОРИРУЕМ
         }
-### Request
+### test
 
 `GET /test`
 
@@ -69,7 +69,7 @@
 	{'data': 'Hello' + username}
 	 Логин сессионный, храниться в куках
 	 
- ### Request get navigation items
+ ### navitems
 `logined only`
 
 `GET /navitems`
@@ -92,9 +92,8 @@
 	
 	
 # POST
-## Логин
 
-### Request
+### login
 
 `POST /login/`
 
