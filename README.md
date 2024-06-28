@@ -63,4 +63,9 @@
 	или
 	"message": "Успешный вход", 200
 
-
+#### Login data
+	{
+        name: 'Ihor',
+        pass: 'password',
+        rememberMe: true
+   	 }
