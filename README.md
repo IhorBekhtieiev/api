@@ -55,8 +55,7 @@
 
 `POST /login/`
 
-    https://ihor24.pythonanywhere.com/api/login/
-
+ https://ihor24.pythonanywhere.com/api/login/
 	### Response
 	
 	   	"Неправильный логин или пароль", 401
