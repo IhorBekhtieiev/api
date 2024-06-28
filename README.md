@@ -47,6 +47,28 @@
 	 Вернет результат только если пользователь залогинен
 	{'data': 'Hello' + username}
 	 Логин сессионный, храниться в куках
+	 
+ ### Request get navigation items
+`logined only`
+
+`GET /navitems`
+
+    https://ihor24.pythonanywhere.com/api/navitems
+
+### Response structure
+	{
+		itemName(string) : url(string)
+	}
+### Response example
+	{
+		"Заявки": "lids",
+		"Контакты": "contacts",
+		"Настройки": "settings",
+		"Объекты": "objects"
+	}
+	
+	
+	
 	
 # POST
 ## Логин
