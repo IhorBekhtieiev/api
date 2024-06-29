@@ -8,6 +8,8 @@
 |-[POST](#POST) | -[POST](#login)               |
 |               | -[strucfchek](#strucfchek)    |
 |               | -[addfield](#addfield)        |
+|               | -[updateoradd](#updateoradd)        |
+
 
 
 ### Данные аккаунтов для тестов
