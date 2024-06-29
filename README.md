@@ -47,10 +47,13 @@
 |input     |data_type                |Тип принимаемых данных| text, integer   |
 |          |input_type               |Тип поля для ввода    | field, area     |
 
+
+
 #### Пример ответа
+
 ```json
 [
-    {
+	{
         "Basic_field": true,
         "Extra_Parameters": {
             "List_values": [
@@ -79,6 +82,12 @@
         "Must_fill": true
     }
 ]
+```
+
+
+
+
+
 
 ### loginform
 
