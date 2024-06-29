@@ -1,11 +1,14 @@
 # API DOC V1
 
 # Оглавление
--[GET запросы](#GET)
+||
+|-|
+|-[GET запросы](#GET)|
 
 -[GET fields](#fields)
 
 -[POST запросы](#POST)
+
 -[POST login](#login)
 
 
