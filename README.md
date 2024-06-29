@@ -7,7 +7,7 @@
 |               | -[getme](#getme)              |
 |-[POST](#POST) | -[POST](#login)               |
 |               | -[strucfchek](#strucfchek)    |
-|               | -[addfield](#addfield)        |
+|               | -[addfield](#add)        |
 |               | -[updateoradd](#updateoradd)        |
 
 
@@ -212,7 +212,7 @@
 
   
 
-## addfield	
+## add / ##updateoradd
 	https://ihor24.pythonanywhere.com/api/fields/add
  `POST fields/add`
 
