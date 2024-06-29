@@ -40,6 +40,40 @@
 |Basic_field    |bool        |Является ли базовой структурой|
 |For_object_type|string      |Для какого типа объектов поле |
 
+#### Пример ответа
+`
+[
+    {
+        "Basic_field": true,
+        "Extra_Parameters": {
+            "List_values": [
+                "Квартира",
+                "Дом",
+                "Земля",
+                "Коммерческая недвижимость"
+            ]
+        },
+        "Field_Name": "Тип объекта",
+        "Field_Type": "list",
+        "For_object_type": "*",
+        "ID": 1,
+        "Must_fill": true
+    },
+    {
+        "Basic_field": true,
+        "Extra_Parameters": {
+            "data_type": "text",
+            "input_type": "field"
+        },
+        "Field_Name": "Название объекта",
+        "Field_Type": "input",
+        "For_object_type": "*",
+        "ID": 2,
+        "Must_fill": true
+    }
+]
+`
+
 ### Типы полей
 |Тип поля  |Extra_Parameters         |Описание              |Варианты значений|
 |----------|-------------------------|----------------------|-----------------|
