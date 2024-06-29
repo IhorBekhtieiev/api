@@ -7,6 +7,7 @@
 |               | -[getme](#getme)              |
 |-[POST](#POST) | -[POST](#login)               |
 |               | -[strucfchek](#strucfchek)    |
+|               | -[addfield](#addfield)        |
 
 
 ### Данные аккаунтов для тестов
