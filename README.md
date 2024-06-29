@@ -212,7 +212,7 @@
 
   
 
-## add / ## updateoradd
+## add 
 	https://ihor24.pythonanywhere.com/api/fields/add
  `POST fields/add`
 
@@ -248,7 +248,13 @@
 {
     "message": "Ошибка добавления поля: {0: {'Field_Type': ['Missing data for required field.'], 'Field_Name': ['Missing data for required field.'], 'Must_fill': ['Missing data for required field.']}}"
 }
+
 ```
+## updateoradd
+ `POST fields/updateoradd`
+	https://ihor24.pythonanywhere.com/api/fields/updateoradd
+Работает по тем-же правилам что и -(add)[#add]. **НО**, принимает список из актуальных полей и новых. В случае изменения актуальных - изменяет их, а новые добавляет.
+
 
 ## test 
 запросы для проверок 
