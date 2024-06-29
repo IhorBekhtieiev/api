@@ -2,7 +2,7 @@
 
 # Оглавление
 -[GET запросы](#Get)
--[GET fields](###fields)
+-[GET fields](#fields)
 -[POST запросы](#Get)
 
 ### Данные аккаунтов для тестов
