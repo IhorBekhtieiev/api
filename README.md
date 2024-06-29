@@ -69,7 +69,7 @@
 	{'data': 'Hello' + username}
 	 Логин сессионный, храниться в куках
 	 
- ### navitems
+ ### navitems | **УСТАРЕЛ**
 `logined only`
 
 `GET /navitems`
