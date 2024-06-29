@@ -1,9 +1,13 @@
 # API DOC V1
 
 # Оглавление
--[GET запросы](#Get)
+-[GET запросы](#GET)
+
 -[GET fields](#fields)
--[POST запросы](#Get)
+
+-[POST запросы](#POST)
+-[POST login](#login)
+
 
 ### Данные аккаунтов для тестов
 ```json
@@ -18,7 +22,7 @@
 
     https://ihor24.pythonanywhere.com/api/
 
-# Get
+# GET
 
 
 ### fields 
