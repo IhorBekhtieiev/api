@@ -9,11 +9,6 @@
 |               | -[strucfchek](#strucfchek)    |
 
 
--[POST запросы](#POST)
-
--[POST login](#login)
-
-
 ### Данные аккаунтов для тестов
 ```json
         "Username": "login_alexander"
