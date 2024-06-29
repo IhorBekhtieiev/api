@@ -1,11 +1,13 @@
 # API DOC V1
 
 # Оглавление
-||
-|-|
-|-[GET запросы](#GET)|
+|Тип обращения  |Запросы                        |
+|---------------|-------------------------------|
+|-[GET](#GET)   | -[fields](#fields)            |
+|               | -[getme](#getme)              |
+|-[POST](#POST) | -[POST](#login)               |
+|               | -[strucfchek](#strucfchek)    |
 
--[GET fields](#fields)
 
 -[POST запросы](#POST)
 
@@ -174,7 +176,7 @@
 	
 # POST
 
-### login
+## login
 
 `POST /login/`
 
@@ -192,3 +194,28 @@
 	password: 'password',
 	rememberMe: true
 	 }
+## test 
+запросы для проверок 
+	https://ihor24.pythonanywhere.com/api/test/ENDPOINT
+ 
+### strucfchek
+`POST test/strucfchek`
+
+	https://ihor24.pythonanywhere.com/api/test/strucfchek
+ 
+#### Описание
+Проверка правильности структуры поля. **Не проводит валидацию данных или проверку типов данных**
+
+#### Response
+400 
+```json
+{
+    "message": "Ошибка, в ключах: ['Basic_fiцeld', 'Extra_Paцrameters']"
+}
+```
+200
+```json
+{
+    "message": "Структура данных корректна"
+}
+```
