@@ -1,4 +1,8 @@
 # API DOC V1
+
+# Оглавление
+-[GET запросы](#Get)
+
 ### Данные аккаунтов для тестов
 ```json
         "Username": "login_alexander"
@@ -8,15 +12,11 @@
         "Password": "Dolphin2024"
 ```
 
-## api
+## api маршрут
 
     https://ihor24.pythonanywhere.com/api/
 
-# REST API
-
-Снизу будут примеры запросов и их ответы
-
-## Get
+# Get
 
 
 ### fields 
