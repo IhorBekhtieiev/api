@@ -44,7 +44,7 @@
 |Тип поля  |Extra_Parameters         |Описание              |Варианты значений            |
 |----------|-------------------------|----------------------|-----------------------------|
 |list      |List_values              |Список значений(str)  | *                           |
-|input     |data_type                |Тип принимаемых данных| text, integer               |
+|input     |data_type                |Тип принимаемых данных| text, integer,float         |
 |          |input_type               |Тип поля для ввода    | field, area,contact_field   |
 
 
