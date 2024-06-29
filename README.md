@@ -7,7 +7,7 @@
 |               | -[getme](#getme)              |
 |-[POST](#POST) | -[POST](#login)               |
 |               | -[strucfchek](#strucfchek)    |
-|               | -[addfield](#add)        |
+|               | -[add field](#add)        |
 |               | -[updateoradd](#updateoradd)        |
 
 
@@ -251,9 +251,12 @@
 
 ```
 ## updateoradd
+
  `POST fields/updateoradd`
+ 
 	https://ihor24.pythonanywhere.com/api/fields/updateoradd
-Работает по тем-же правилам что и -(add)[#add]. **НО**, принимает список из актуальных полей и новых. В случае изменения актуальных - изменяет их, а новые добавляет.
+ 
+Работает по тем-же правилам что и -[add field](#add) . **НО**, принимает список из актуальных полей и новых. В случае изменения актуальных - изменяет их, а новые добавляет.
 
 
 ## test 
