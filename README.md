@@ -226,7 +226,7 @@
 400 
 ```json
 {
-    "message": "Ошибка в поле "Extra_Parmeters", "ID":0.Ошибка в поле "Must_will", "ID":1.Ошибка в поле "Extra_Parmeters", "ID":1."
+    "message": "Ошибка в поле (Extra_Parmeters), ID:(0).Ошибка в поле (Must_will), ID:(1).Ошибка в поле (Extra_Parmeters), ID:(1)."
 }
 ```
 200
