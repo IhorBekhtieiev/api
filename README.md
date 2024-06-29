@@ -29,7 +29,7 @@
 ### fields 
 `GET /fields`
 
-	https://ihor24.pythonanywhere.com/api/object/fields
+	https://ihor24.pythonanywhere.com/api/fields/object
  
 ### Описание
 
