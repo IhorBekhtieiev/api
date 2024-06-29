@@ -205,7 +205,7 @@
 	{
 	name: 'Ihor',
 	password: 'password',
-	rememberMe: true
+	rememberme: true
 	 }
 
   
