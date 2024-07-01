@@ -1,3 +1,4 @@
+
 # API V1 DOC 
 
 
@@ -10,23 +11,43 @@
         "Password": "Dolphin2024"
 ```
 
-## api маршрут
+## API маршрут
 
     https://ihor24.pythonanywhere.com/api/v1/
 
 # fields 
-
+Маршрут со всеми доступными переменными. 
+***Использовать только в таком порядке!***
 `fields/<id>/<key>`
 
-| Машрут  | Переменные | Доступные методы  | 
+
+
+| Маршрут  | Переменные | Доступные методы  | 
 |-----|------------|-------------|
 | fields/   | <ul><li>id(optional)</li><li>key(optional)</li></ul>| GET, POST |
 
  
 ## Описание
-* GET
+### GET 
++ ```fields/```
+Вернет все поля, которые на данный момент находятся в базе данных.
+Каждое поле имеет обязательные атрибуты и дополнительные (*Extra_Parameters*). 
+У каждого типа поля есть свои, иногда уникальные, обязательные дополнительные атрибуты, описывающие какие-то параметры конкретного поля. 
+ **For_structure_type** имеет свои обязательные параметры, в зависимости от принадлежности поля к тому или иному виду шаблона(*контакт, объект недвижимости, заявка*). 
+ Ниже таблица описывает все параметры полей, а так дополнительные.
+ 
++ ```fields/<id>```
+Вернет list из одного объекта. Которому принадлежит id.  
++ ```fields/<id>/<key>```
+Вернет 
+	
 
-#### Обазательные поля
+
+
+
+
+
+### Обязательные поля
 |Название поля   |Тип значения|Описание                                       |
 |--------------- |------------|-----------------------------------------------|
 |ID		 |ineger      |ID                                             |
@@ -34,7 +55,6 @@
 |Field_Name      |string      |Отображаемое имя                               |
 |Must_Fill       |bool        |Обязательность заполнения                      |
 |Basic_field     |bool        |Является ли базовой структурой                 |
-|For_object_type |string      |Для какого типа объектов поле                  |
 |For_structure_type |string      |Для какого типа записей поле                |
 |Extra_Parameters|dict        |Набор уникальных параметров, каждого типа поля |
 
@@ -62,68 +82,33 @@
 
 ```json
 [
-	{
+    {
         "Basic_field": true,
         "Extra_Parameters": {
-            "List_values": [
-                "Квартира",
-                "Дом",
-                "Земля",
-                "Коммерческая недвижимость"
-            ]
-        },
+            "For_object_type": ["*"],
+            "List_values": ["Квартира","Дом","Земля","Коммерческая недвижимость"]},
         "Field_Name": "Тип объекта",
         "Field_Type": "list",
-        "For_object_type": "*",
+        "For_structure_type": ["{", "*", "}"],
         "ID": 1,
         "Must_fill": true
     },
     {
         "Basic_field": true,
         "Extra_Parameters": {
+            "For_object_type": ["*"],
             "data_type": "text",
             "input_type": "field"
         },
         "Field_Name": "Название объекта",
         "Field_Type": "input",
-        "For_object_type": "*",
+        "For_structure_type": ["{", "*", "}"],
         "ID": 2,
         "Must_fill": true
     }
 ]
 ```
 
-
-
-
-
-
-### loginform
-
-`GET /loginform`
-
-    https://ihor24.pythonanywhere.com/api/loginform
-
-### Response
-
-	   {
-	  "LoginForm": {
-		"DisplayName": "Ваш логин",
-		"FieldType": "input"
-	  },
-	  "PasswordForm": {
-		"DisplayName": "Ваш пароль",
-		"FieldType": "input"
-	  },
-	  "RememberMe": {
-		"DisplayName": "Запомнить меня",
-		"FieldType": "checkbox"
-	  },
-	  "SingInbutton": {
-		"DisplayName": "Войти",
-		"FieldType": "button"
-	  }
-	}
 ### getme *возвращает информацию про текущего пользователя*
 `logined only`
 `GET /users/getme`
@@ -149,28 +134,7 @@
 	{'data': 'Hello' + username}
 	 Логин сессионный, храниться в куках
 	 
- ### navitems | **УСТАРЕЛ**
-`logined only`
 
-`GET /navitems`
-
-    https://ihor24.pythonanywhere.com/api/navitems
-
-### Response structure
-	{
-		itemName(string) : url(string)
-	}
-### Response example
-	{
-		"Заявки": "lids",
-		"Контакты": "contacts",
-		"Настройки": "settings",
-		"Объекты": "objects"
-	}
-	
-	
-	
-	
 # POST
 
 ## login
