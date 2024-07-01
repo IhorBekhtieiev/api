@@ -74,6 +74,43 @@
 
 #### Пример ответов на GET запросы 
 * 200
+`api/v1/fields`
+```json
+[
+    {
+        "Basic_field": true,
+        "Extra_Parameters": {
+            "For_object_type": ["*"],
+            "List_values": [
+                "Квартира",
+                "Дом",
+                "Земля",
+                "Коммерческая недвижимость"
+            ]
+        },
+        "Field_Name": "Тип объекта",
+        "Field_Type": "list",
+        "For_structure_type": ["*"],
+        "ID": 1,
+        "Must_fill": true
+    },
+    {
+        "Basic_field": true,
+        "Extra_Parameters": {
+            "For_object_type": ["*"],
+            "data_type": "text",
+            "input_type": "field"
+        },
+        "Field_Name": "Название объекта",
+        "Field_Type": "input",
+        "For_structure_type": ["*"],
+        "ID": 2,
+        "Must_fill": true
+    }
+]
+```
+
+
 
 `api/v1/fields/1`
 
@@ -105,8 +142,8 @@
 
 `api/v1/fields/500`
 
-`api/v1/fields/str`
 
+`api/v1/fields/str`
 `api/v1/fields/5str`
 
 
