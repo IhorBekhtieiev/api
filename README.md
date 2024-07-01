@@ -1,15 +1,4 @@
-# API DOC V1
-
-# Оглавление
-|Тип обращения  |Запросы                        |
-|---------------|-------------------------------|
-|-[GET](#GET)   | -[fields](#fields)            |
-|               | -[getme](#getme)              |
-|-[POST](#POST) | -[POST](#login)               |
-|               | -[strucfchek](#strucfchek)    |
-|               | -[add field](#add)        |
-|               | -[updateoradd](#updateoradd)        |
-
+# API V1 DOC 
 
 
 ### Данные аккаунтов для тестов
@@ -23,17 +12,19 @@
 
 ## api маршрут
 
-    https://ihor24.pythonanywhere.com/api/
+    https://ihor24.pythonanywhere.com/api/v1/
 
-# GET
+# fields 
 
+`fields/<id>/<key>`
 
-### fields 
-`GET /fields`
+| Машрут  | Переменные | Доступные методы  | 
+|-----|------------|-------------|
+| fields/   | <ul><li>id(optional)</li><li>key(optional)</li></ul>| GET, POST |
 
-	https://ihor24.pythonanywhere.com/api/fields/object
  
-### Описание
+## Описание
+* GET
 
 Унифицированный запрос, возвращающий поля необходимы для заполнения карточек ***ЛЮБОГО*** типа.
 /fields/**object**, /fields/**contact** и т.д. Каждое поле имеет список из обязательных параметров и список Extra_Parameters. В котором в виде словаря записаны все параметры, которые уникальны для данного поля.
