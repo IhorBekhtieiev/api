@@ -48,8 +48,14 @@
 |Field_Name      |string      |Отображаемое имя                               |
 |Must_Fill       |bool        |Обязательность заполнения                      |
 |Basic_field     |bool        |Является ли базовой структурой                 |
-|For_structure_type |string      |Для какого типа записей поле                |
+|For_structure_type |list[string]|Для какого типа записей поле. ["*"] если для всех          |
 |Extra_Parameters|dict        |Набор уникальных параметров, каждого типа поля |
+
+* `For_structure_type` - Если стоит в значении для всех, то в `Extra_Parameters` поля, стоит учитывать дополнительные параметры всех видов шаблонов.
+### Типы шаблонов и их дополнительные параметры
+|Тип шаблона|Extra_Parameters         |Описание              |Варианты значений            |
+|----------|-------------------------|----------------------|-----------------------------|
+|object    |For_object_type          | К каким шаблонам относится поле объекта<br>["*"] если для всех   | list[str]                   |
 
 
 ### Типы полей
@@ -61,6 +67,8 @@
 |list      |List_values              |Список значений(str)  | list[str]                   |
 |input     |data_type                |Тип принимаемых данных| text, integer,float         |
 |          |input_type               |Тип поля для ввода    | field, area,contact_field, dual_input  |
+
+
 
 ### Описание 
 * `field` - стандартное полее ввода
@@ -179,16 +187,6 @@
         'Phone_numbers': list of phone numbers,
         'Contact_fields': возвращает пользовательские поля. ПОКА ЧТО ИГНОРИРУЕМ
         }
-### test
-
-`GET /test`
-
-    https://ihor24.pythonanywhere.com/api/test
-
-### Response
-	 Вернет результат только если пользователь залогинен
-	{'data': 'Hello' + username}
-	 Логин сессионный, храниться в куках
 	 
 
 # POST
