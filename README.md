@@ -73,7 +73,7 @@
 |----------|-------------------------|----------------------|-----------------------------|
 |list      |List_values              |Список значений(str)  | list[str]                   |
 |input     |data_type                |Тип принимаемых данных| text, integer,float         |
-|          |input_type               |Тип поля для ввода    | field, area,contact_field, dual_input  |
+|          |input_type               |Тип поля для ввода    | field, textarea,contact_field, dual_input  |
 
 
 
