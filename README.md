@@ -47,7 +47,7 @@
 
 | Маршрут  | Переменные | Доступные методы  | 
 |-----|------------|-------------|
-| fields/   | <ul><li>id(optional)</li><li>key(optional)</li></ul>| GET, POST, -[DELETE](#DELETE fields) |
+| fields/   | <ul><li>id(optional)</li><li>key(optional)</li></ul>| -[GET](#GET/fields), -[POST](#POST/fields), -[DELETE](#DELETE/fields) |
 
  
 ## Описание
